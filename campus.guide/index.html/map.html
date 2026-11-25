@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Map | CampusGuide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎓</div>
+        <div class="logo-text"><h1>CampusGuide</h1><p>USTP-CAGAYAN DE ORO</p></div>
+      </a>
+      <div class="nav-right">
+        <nav>
+          <a href="index.html" data-translate="nav-home">Home</a>
+          <a href="info.html" data-translate="nav-info">Campus information</a>
+          <a href="calendar.html" data-translate="nav-calendar">Calendar</a>
+          <a href="map.html" class="active" data-translate="nav-map">Map</a>
+          <a href="tala.html" data-translate="nav-tala">TALA AI</a>
+          <a href="orgs.html" data-translate="nav-orgs">Organizations</a>
+          <a href="handbook.html" data-translate="nav-handbook">Handbook</a>
+        </nav>
+        <div class="nav-actions">
+          <select class="lang-select" id="languageSelector">
+            <option value="en">🌐 ENGLISH</option>
+            <option value="fil">FILIPINO</option>
+            <option value="ceb">CEBUANO</option>
+          </select>
+          <a href="tala.html" class="btn-ask" data-translate="btn-ask">Ask TALA AI →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="page-header-content">
+      <span class="hero-badge">● CAMPUS MAP</span>
+      <h1>Navigate USTP-CDO</h1>
+      <p>Use this detailed directory to locate specific buildings, offices, and facilities around the Cagayan de Oro campus.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Legend -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h3 style="color: var(--navy); margin-bottom: 1rem;">Map Legend</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #E04F5F; border-radius: 4px;"></span> Commercial</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #F6C85F; border-radius: 4px;"></span> Residential/Dormitory Zone</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #56C596; border-radius: 4px;"></span> Sports and Recreation Zone</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #4A90E2; border-radius: 4px;"></span> Academic Core Zone</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #50E3C2; border-radius: 4px;"></span> Research Zone</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #9013FE; border-radius: 4px;"></span> Administration/Operation Zone</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;"><span style="display: inline-block; width: 16px; height: 16px; background: #BD10E0; border-radius: 4px;"></span> Auxiliary Services Zone</div>
+      </div>
+    </div>
+
+    <!-- Buildings List (3 Columns) -->
+    <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 1.5rem;">Campus Buildings</h2>
+    <div class="grid-3">
+    
+    <!-- Campus Map Image -->
+<div style="text-align: center; margin: 2rem auto; max-width: 700px;">
+  <img src="campus-map.jpg" alt="USTP-CDO Campus Map" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+</div>
+      
+      <!-- Column 1 -->
+      <div class="card" style="padding: 1.5rem;">
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
+          <li><strong style="color: var(--navy);">BLDG. 1:</strong> Arts & Culture Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 2:</strong> Guidance and Testing Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 3:</strong> College of Medicine</li>
+          <li><strong style="color: var(--navy);">BLDG. 5:</strong> Old Engineering Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 9:</strong> ICT Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 10:</strong> Administration Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 14:</strong> Finance and Accounting Building / Senior High School Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 15:</strong> Gymnasium Lobby</li>
+          <li><strong style="color: var(--navy);">BLDG. 16:</strong> Gymnasium (DRER Memorial Hall)</li>
+          <li><strong style="color: var(--navy);">BLDG. 18:</strong> Culinary Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 19:</strong> NSTP Building</li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="card" style="padding: 1.5rem;">
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
+          <li><strong style="color: var(--navy);">BLDG. 20:</strong> Cafeteria</li>
+          <li><strong style="color: var(--navy);">BLDG. 21:</strong> Guard House</li>
+          <li><strong style="color: var(--navy);">BLDG. 23:</strong> Learning Resource Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 24:</strong> Girl's Trade Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 25:</strong> Food Innovation Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 26:</strong> Food Innovation Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 27:</strong> University Health Center / Office of Student Affairs (OSA)</li>
+          <li><strong style="color: var(--navy);">BLDG. 28:</strong> Old Science Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 35:</strong> Old Education Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 36:</strong> Old Student Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 41:</strong> Science Complex</li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="card" style="padding: 1.5rem;">
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
+          <li><strong style="color: var(--navy);">BLDG. 42:</strong> Engineering Complex I (Right Wing)</li>
+          <li><strong style="color: var(--navy);">BLDG. 43:</strong> Engineering Complex II (Left Wing)</li>
+          <li><strong style="color: var(--navy);">BLDG. 44:</strong> Student Center & Education Complex</li>
+          <li><strong style="color: var(--navy);">BLDG. 45:</strong> Mechanical Laboratory Shop</li>
+          <li><strong style="color: var(--navy);">BLDG. 47:</strong> Technology Building</li>
+          <li><strong style="color: var(--navy);">BLDG. 50:</strong> Faculty Learning Resource Center</li>
+          <li><strong style="color: var(--navy);">BLDG. 51:</strong> Dormitory</li>
+          <li><strong style="color: var(--navy);">BLDG. 52:</strong> FAB LAB Building</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><div class="footer-brand-icon">🎓</div><h3 class="footer-brand-title">CampusGuide</h3></div>
+        <p class="footer-text">CampusGuide is a research prototype for the University of Science and Technology of Southern Philippines – Cagayan de Oro Campus.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-translate="nav-home">Home</a></li>
+          <li><a href="info.html" class="footer-link" data-translate="nav-info">Campus information</a></li>
+          <li><a href="calendar.html" class="footer-link" data-translate="nav-calendar">Calendar</a></li>
+          <li><a href="map.html" class="footer-link" data-translate="nav-map">Map</a></li>
+          <li><a href="orgs.html" class="footer-link" data-translate="nav-orgs">Organizations</a></li>
+          <li><a href="handbook.html" class="footer-link" data-translate="nav-handbook">Handbook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Not an official USTP system. Information is maintained by the research team.</p>
+    </div>
+  </footer>
+  <script src="translations.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

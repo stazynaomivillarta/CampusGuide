@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Information | CampusGuide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎓</div>
+        <div class="logo-text"><h1>CampusGuide</h1><p>USTP-CAGAYAN DE ORO</p></div>
+      </a>
+      <div class="nav-right">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="info.html" class="active">Campus information</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="map.html">Map</a>
+          <a href="tala.html">TALA AI</a>
+          <a href="orgs.html">Organizations</a>
+        </nav>
+        <div class="nav-actions"><a href="tala.html" class="btn-ask">Ask TALA AI →</a></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header" style="padding-bottom: 2rem;">
+    <div class="page-header-content">
+      <span class="hero-badge">● CAMPUS INFORMATION</span>
+      <h1>Your Guide to USTP–CDO Offices and Services</h1>
+      <p>USTP-CDO offices, the services they handle, and the campus contacts released by the University of Science and Technology of Southern Philippines.</p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: 2rem;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" id="filter-buttons">
+        <button class="card-tag filter-btn" data-filter="all" style="background: var(--navy); color: var(--white); border: 1px solid var(--navy); padding: 0.5rem 1rem; cursor: pointer;">All</button>
+        <button class="card-tag filter-btn" data-filter="student-services" style="background: var(--white); border: 1px solid var(--border); padding: 0.5rem 1rem; cursor: pointer;">Student services</button>
+        <button class="card-tag filter-btn" data-filter="administration" style="background: var(--white); border: 1px solid var(--border); padding: 0.5rem 1rem; cursor: pointer;">Administration</button>
+        <button class="card-tag filter-btn" data-filter="colleges" style="background: var(--white); border: 1px solid var(--border); padding: 0.5rem 1rem; cursor: pointer;">Colleges</button>
+        <a href="orgs.html" class="card-tag" style="background: var(--white); border: 1px solid var(--border); padding: 0.5rem 1rem; cursor: pointer; text-decoration: none; color: var(--text-main); font-weight: 700;">Organizations</a>
+      </div>
+      <span style="color: var(--text-muted); font-size: 0.9rem; font-weight: 600;" id="unit-count">14 campus unit(s)</span>
+    </div>
+
+    <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Campus offices and units</h2>
+    <p class="section-subtitle" style="margin-bottom: 2rem;">Contact details follow the official USTP directory. Local numbers use the campus trunkline +63 (088) 857-1738.</p>
+
+    <div class="grid" id="cards-container">
+      
+      <!-- ADMINISTRATION -->
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</div>
+          <span class="card-tag" style="margin-bottom: 0;">Administration</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Chancellor's Office</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Campus executive office for overall campus administration and official campus transactions.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Campus administration</span>
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Official campus requests</span>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ chancelloroffice.cdo@ustp.edu.ph</div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">📞 Local 168 · +63 (088) 857-1738</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</div>
+          <span class="card-tag" style="margin-bottom: 0;">Administration</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Vice Chancellor for Academic Affairs (VCAA)</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Oversees academic programs, curriculum matters, and academic policy concerns of the campus.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Academic policies</span>
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Curriculum matters</span>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ vcaa_cdo@ustp.edu.ph</div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">📞 Local 1110 · +63 (088) 857-1738</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</div>
+          <span class="card-tag" style="margin-bottom: 0;">Administration</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Vice Chancellor for Student Affairs and Services</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Leads student welfare, student services, and co-curricular programs of the campus.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Student welfare</span>
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Student services</span>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ vcsas.cdo@ustp.edu.ph</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</div>
+          <span class="card-tag" style="margin-bottom: 0;">Administration</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Vice Chancellor for Finance and Administration</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Handles campus finance, administration, and related administrative concerns.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Finance concerns</span>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ ovcfa@ustp.edu.ph</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</div>
+          <span class="card-tag" style="margin-bottom: 0;">Administration</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Vice Chancellor for Medical and Allied Health Programs</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Oversees the medical and allied health programs of the campus.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Medical programs</span>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ vcmahp@ustp.edu.ph</div>
+        </div>
+      </div>
+
+      <!-- SUPPORT UNITS -->
+      <div class="card filter-item" data-category="administration" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🔧</div>
+          <span class="card-tag" style="margin-bottom: 0;">Support units</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Vice Chancellor for Research, Innovation and Extension</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Coordinates research, innovation, and extension activities, including research support for students and faculty.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Research support</span>
+          <span class="card-tag" style="background: #F1F5F9; color: var(--text-muted); font-size: 0.7rem; margin: 0; text-transform: none;">Innovation and extension</span>
+        </div>
+      </div>
+
+      <!-- STUDENT SERVICES -->
+      <div class="card filter-item" data-category="student-services" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🤝</div>
+          <span class="card-tag" style="margin-bottom: 0;">Student services</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Office of Student Affairs (OSA)</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Frontline office for student organizations, campus activities, and student welfare concerns.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;"><a href="https://www.facebook.com/ustposacdo" target="_blank" style="color: var(--navy); font-weight: 600;">Visit Facebook Page →</a></p>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ studentaffairs-cdo@ustp.edu.ph</div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">📞 Local 114 · +63 (088) 857-1738</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="student-services" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🎓</div>
+          <span class="card-tag" style="margin-bottom: 0;">Student services</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Admissions and Scholarship Office</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Handles admission requirements, application follow-ups, and scholarship inquiries.</p>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ admissionsandscholarships@ustp.edu.ph</div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">📞 Local 125 · +63 (088) 857-1738</div>
+        </div>
+      </div>
+
+      <div class="card filter-item" data-category="student-services" style="padding: 1.5rem; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🎓</div>
+          <span class="card-tag" style="margin-bottom: 0;">Student services</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Registrar's Office</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">Official records office for enrollment, scholastic records, and academic certifications.</p>
+        <div style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">✉️ registraroffice1@ustp.edu.ph</div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">📞 Local 137 · +63 (088) 857-1738</div>
+        </div>
+      </div>
+
+      <!-- COLLEGES -->
+      <a href="cea.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏗️</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Engineering and Architecture (CEA)</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="citc.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">💻</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Information Technology and Computing (CITC)</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="csm.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">📐</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Science and Mathematics (CSM)</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="cste.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🧪</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Science and Technology Education (CSTE)</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="cot.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">⚙️</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Technology (COT)</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="medicine.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏥</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">College of Medicine</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+      <a href="shs.html" class="card filter-item" data-category="colleges" style="padding: 1.5rem; display: flex; flex-direction: column; text-decoration: none;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏫</div>
+          <span class="card-tag" style="margin-bottom: 0;">Colleges</span>
+        </div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy);">Senior High School</h3>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--navy); font-weight: 600;">Visit Department Page →</p>
+      </a>
+
+    </div>
+
+    <!-- OFFICIAL USTP CHANNELS -->
+    <div style="margin-bottom: 3rem; margin-top: 4rem;">
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <div style="background: #F1F5F9; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--navy);">🔗</div>
+        <h3 style="font-size: 1.4rem; color: var(--navy); margin: 0;">Official USTP channels</h3>
+      </div>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">For transactions and official announcements, always use the University's own channels.</p>
+      <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+        <a href="https://www.ustp.edu.ph" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">USTP official website</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://www.facebook.com/USTPcagayan" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">USTP–CDO campus page</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://www.ustp.edu.ph/administration-directory/ustp-officials/" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">USTP directory and contact details</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://prisms.ustp.edu.ph/padmission" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">Admissions portal (PRISMS)</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://clearance.ustp.edu.ph" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">eClearance</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://hims.ustp.edu.ph" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">HIMS</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://helpdesk.ustp.edu.ph" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">USTP Helpdesk</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://www.ustp.edu.ph/category/cdo/" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">USTP updates and announcements</span><span style="color: var(--text-muted);">↗</span></a>
+        <a href="https://www.ustp.edu.ph/cdeo/citc/2/" target="_blank" class="card" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 1.25rem;"><span style="font-weight: 600; color: var(--navy); font-size: 0.9rem;">University calendars</span><span style="color: var(--text-muted);">↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><div class="footer-brand-icon">🎓</div><h3 class="footer-brand-title">CampusGuide</h3></div>
+        <p class="footer-text">CampusGuide is a research prototype for the University of Science and Technology of Southern Philippines – Cagayan de Oro Campus.</p>
+        <div class="footer-contact"><span class="footer-contact-icon">📍</span><span>Claro M. Recto Avenue, Lapasan, 9000 Cagayan de Oro City, Philippines</span></div>
+        <div class="footer-contact"><span class="footer-contact-icon">📞</span><span>+63 (088) 857-1738</span></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="info.html" class="footer-link">Campus information</a></li>
+          <li><a href="calendar.html" class="footer-link">Calendar</a></li>
+          <li><a href="map.html" class="footer-link">Map</a></li>
+          <li><a href="orgs.html" class="footer-link">Organizations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Not an official USTP system. Information is maintained by the research team and must be confirmed with the concerned office.</p>
+      <p class="footer-note">Research prototype · USTP–Cagayan de Oro Campus</p>
+    </div>
+  </footer>
+
+  <script src="info.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
